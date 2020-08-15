@@ -28,7 +28,7 @@ class Queue {
         this.items.push(element)
     }
     dequeue() {
-        if (this.isEmpty) return "UnderOverflow"
+        if (this.isEmpty) return "Undefine"
         this.items.shift()
     }
     front() {
@@ -50,7 +50,7 @@ class Queue {
 
 var queue = new Queue()
 
-console.log(queue.dequeue) // "UnderOverflow"
+console.log(queue.dequeue) // "Undefine"
 console.log(queue.isEmpty) // true
 // Adding element in queue
 queue.enqueue(11)
